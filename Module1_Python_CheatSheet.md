@@ -9,3 +9,4 @@
 | len()	| Returns the length of a string. | Syntax: 1 len(string_name)  Example: 1 my_string="Hello"  / 2 length = len(my_string) |
 | lower()	| Converts string to lowercase.	 | Example: 1 my_string="Hello" / 2 uppercase_text = my_string.lower() |
 | print()	 | Prints the message or variable inside `()`.	 | Example: 1 print("Hello, world")  / 2 print(a+b) |
+| Python Operators	| - Addition (+): Adds two values together. - Subtraction (-): Subtracts one value from another. - Multiplication (*): Multiplies two values. - Division (/): Divides one value by another, returns a float. - Floor Division (//): Divides one value by another, returns the quotient as an integer. - Modulo (%): Returns the remainder after division |
