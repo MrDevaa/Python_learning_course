@@ -11,5 +11,4 @@
 | print()	 | Prints the message or variable inside `()`.	 | Example: 1 print("Hello, world")  / 2 print(a+b) |
 | Python Operators	| - Addition (+): Adds two values together. - Subtraction (-): Subtracts one value from another. - Multiplication (*): Multiplies two values. - Division (/): Divides one value by another, returns a float. - Floor Division (//): Divides one value by another, returns the quotient as an integer. - Modulo (%): Returns the remainder after division | Example: 1 x = 9 y = 4 / 2 result_add= x + y # Addition  / 3 result_sub= x - y # Subtraction / 4 result_mul= x * y # Multiplication / 5 result_div= x / y # Division  / 6 result_fdiv= x // y # Floor Division / 7 result_mod= x % y # Modulo</td> |
 | replace()	 | Replaces substrings.	| Example: 1 my_string="Hello"  / 2 new_text = my_string.replace("Hello", "Hi") |
-
-
+| Slicing	 | Extracts a portion of the string.	| Syntax: 1 substring = string_name[start:end] // Example: 1 my_string="Hello" substring = my_string[0:5] |
