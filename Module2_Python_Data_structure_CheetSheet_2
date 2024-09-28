@@ -1,0 +1,39 @@
+# Cheat Sheet: Python Data Structures Part-2
+
+## Dictionaries
+
+| **Package/Method** | **Description** | **Code Example** |
+|--------------------|-----------------|------------------|
+| **Creating a Dictionary** | A dictionary is a built-in data type that represents a collection of key-value pairs. Dictionaries are enclosed in curly braces `{}`. | ```python dict_name = {} # Creates an empty dictionary person = { "name": "John", "age": 30, "city": "New York" }``` |
+| **Accessing Values** | You can access the values in a dictionary using their corresponding keys. | ```python value = dict_name["key_name"] # Example: name = person["name"] age = person["age"] ``` |
+| **Add or Modify** | Inserts a new key-value pair into the dictionary or updates an existing one if the key already exists. | ```python dict_name[key] = value # Example: person["Country"] = "USA" person["city"] = "Chicago" ``` |
+| **del** | Removes the specified key-value pair from the dictionary. Raises a `KeyError` if the key does not exist. | ```python del dict_name[key] # Example: del person["Country"] ``` |
+| **update()** | Merges the provided dictionary into the existing dictionary, adding or updating key-value pairs. | ```python dict_name.update({key: value}) # Example: person.update({"Profession": "Doctor"}) ``` |
+| **clear()** | Empties the dictionary, removing all key-value pairs. | ```python dict_name.clear() # Example: grades.clear() ``` |
+| **Key Existence** | You can check for the existence of a key using the `in` keyword. | ```python if "name" in person: print("Name exists in the dictionary.") ``` |
+| **copy()** | Creates a shallow copy of the dictionary. | ```python new_dict = dict_name.copy() # Example: new_person = person.copy() new_person = dict(person) ``` |
+| **keys()** | Retrieves all keys from the dictionary and converts them into a list. | ```python keys_list = list(dict_name.keys()) # Example: person_keys = list(person.keys()) ``` |
+| **values()** | Extracts all values from the dictionary and converts them into a list. | ```python values_list = list(dict_name.values()) # Example: person_values = list(person.values()) ``` |
+| **items()** | Retrieves all key-value pairs as tuples and converts them into a list of tuples. | ```python items_list = list(dict_name.items()) # Example: info = list(person.items()) ``` |
+
+---
+
+## Sets
+
+| **Package/Method** | **Description** | **Code Example** |
+|--------------------|-----------------|------------------|
+| **add()** | Adds an element to a set. Duplicates are automatically removed. | ```python set_name.add(element) # Example: fruits.add("mango") ``` |
+| **clear()** | Removes all elements from the set. | ```python set_name.clear() # Example: fruits.clear() ``` |
+| **copy()** | Creates a shallow copy of the set. | ```python new_set = set_name.copy() # Example: new_fruits = fruits.copy() ``` |
+| **Defining Sets** | A set is an unordered collection of unique elements. | ```python empty_set = set() # Example: fruits = {"apple", "banana", "orange"} ``` |
+| **discard()** | Removes a specific element from the set without raising an error if the element is not found. | ```python set_name.discard(element) # Example: fruits.discard("apple") ``` |
+| **issubset()** | Checks if the current set is a subset of another set. Returns `True` if all elements of the current set are present in the other set. | ```python is_subset = set1.issubset(set2) # Example: is_subset = fruits.issubset(colors) ``` |
+| **issuperset()** | Checks if the current set is a superset of another set. Returns `True` if all elements of the other set are present in the current set. | ```python is_superset = set1.issuperset(set2) # Example: is_superset = colors.issuperset(fruits) ``` |
+| **pop()** | Removes and returns an arbitrary element from the set. Raises a `KeyError` if the set is empty. | ```python removed_element = set_name.pop() # Example: removed_fruit = fruits.pop() ``` |
+| **remove()** | Removes a specific element from the set. Raises a `KeyError` if the element is not found. | ```python set_name.remove(element) # Example: fruits.remove("banana") ``` |
+| **Set Operations** | Performs operations such as `union`, `intersection`, `difference`, and `symmetric difference` on sets. | ```python union_set = set1.union(set2) intersection_set = set1.intersection(set2) difference_set = set1.difference(set2) sym_diff_set = set1.symmetric_difference(set2) # Example: combined = fruits.union(colors) common = fruits.intersection(colors) unique_to_fruits = fruits.difference(colors) sym_diff = fruits.symmetric_difference(colors) ``` |
+| **update()** | Adds elements from another iterable into the set. | ```python set_name.update(iterable) # Example: fruits.update(["kiwi", "grape"]) ``` |
+
+---
+
+© IBM Corporation. All rights reserved.
