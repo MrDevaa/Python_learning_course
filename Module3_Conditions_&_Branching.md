@@ -34,26 +34,26 @@ Here, the code checks if the variable age is greater than or equal to 20 and pri
 2. Branching
 Branching is like making decisions in your program based on conditions. Think of it as real-life choices.
 
-The IF statement
+- The IF statement
 Consider a real-life scenario of entering a bar. If you're above a certain age, you can enter; otherwise, you cannot.
 
-age = 20
-if age >= 21:
-    print("You can enter the bar.")
-else:
-    print("Sorry, you cannot enter.")
+          age = 20
+          if age >= 21:
+              print("You can enter the bar.")
+          else:
+              print("Sorry, you cannot enter.")
     
 Here, you are using the if statement to make a decision based on the age variable.
 
-The ELIF Statement
+- The ELIF Statement
 Sometimes, there are multiple conditions to check. For example, if you're not old enough for the bar, you can go to a movie instead.
 
-if age >= 21:
-    print("You can enter the bar.")
-elif age >= 18:
-    print("You can watch a movie.")
-else:
-    print("Sorry, you cannot do either.")
+          if age >= 21:
+              print("You can enter the bar.")
+          elif age >= 18:
+              print("You can watch a movie.")
+          else:
+              print("Sorry, you cannot do either.")
     
 Real-life example: Automated Teller Machine (ATM)
 When a user interacts with an ATM, the software in the ATM can use branching to make decisions based on the user's input. For example, if the user selects "Withdraw Cash" the ATM can branch into different denominations of bills to dispense based on the amount requested.
