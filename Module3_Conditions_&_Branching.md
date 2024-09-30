@@ -55,19 +55,19 @@ Sometimes, there are multiple conditions to check. For example, if you're not ol
           else:
               print("Sorry, you cannot do either.")
     
-Real-life example: Automated Teller Machine (ATM)
+- Real-life example: Automated Teller Machine (ATM)
 When a user interacts with an ATM, the software in the ATM can use branching to make decisions based on the user's input. For example, if the user selects "Withdraw Cash" the ATM can branch into different denominations of bills to dispense based on the amount requested.
 
-user_choice = "Withdraw Cash"
-if user_choice == "Withdraw Cash":
-    amount = input("Enter the amount to withdraw: ")
-    if amount % 10 == 0:
-        dispense_cash(amount)
-    else:
-        print("Please enter a multiple of 10.")
-else:
-    print("Thank you for using the ATM.")
-Copied!
+          user_choice = "Withdraw Cash"
+          if user_choice == "Withdraw Cash":
+              amount = input("Enter the amount to withdraw: ")
+              if amount % 10 == 0:
+                  dispense_cash(amount)
+              else:
+                  print("Please enter a multiple of 10.")
+          else:
+              print("Thank you for using the ATM.")
+
 3. Logical operators
 Logical operators help combine and manipulate conditions.
 
