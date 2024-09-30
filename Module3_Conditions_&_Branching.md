@@ -15,7 +15,7 @@ The equality operator == checks if two values are equal. For example, in Python:
     
 Here, the code checks if the variable age is equal to 25 and prints a message accordingly.
 
--bInequality operator
+- Inequality operator
 The inequality operator != checks if two values are not equal:
 
           if age != 30:
@@ -23,11 +23,11 @@ The inequality operator != checks if two values are not equal:
               
 Here, the code checks if the variable age is not equal to 30 and prints a message accordingly.
 
-Greater than and less than
+- Greater than and less than
 You can also compare if one value is greater than another.
 
-if age>= 20:
-    Print("Yes, the Age is greater than 20")
+          if age>= 20:
+              Print("Yes, the Age is greater than 20")
 
 Here, the code checks if the variable age is greater than or equal to 20 and prints a message accordingly.
 
