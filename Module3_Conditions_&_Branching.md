@@ -71,38 +71,38 @@ When a user interacts with an ATM, the software in the ATM can use branching to 
 3. Logical operators
 Logical operators help combine and manipulate conditions.
 
-The NOT operator
+- The NOT operator
 Real-life example: Notification settings
 In a smartphone's notification settings, you can use the NOT operator to control when to send notifications. For example, you might only want to receive notifications when your phone is not in "Do Not Disturb" mode.
 
 The not operator negates a condition.
 
-is_do_not_disturb = True
-if not is_do_not_disturb:
-    send_notification("New message received")
+          is_do_not_disturb = True
+          if not is_do_not_disturb:
+              send_notification("New message received")
 
-The AND operator
+- The AND operator
 Real-life example: Access control
 In a secure facility, you can use the AND operator to check multiple conditions for access. To open a high-security door, a person might need both a valid ID card and a matching fingerprint.
 
 The AND operator checks if all required conditions are true, like needing both keys to open a safe.
 
-has_valid_id_card = True
-has_matching_fingerprint = True
-if has_valid_id_card and has_matching_fingerprint:
-    open_high_security_door()
+          has_valid_id_card = True
+          has_matching_fingerprint = True
+          if has_valid_id_card and has_matching_fingerprint:
+              open_high_security_door()
 
-The OR operator
+- The OR operator
 Real-life example: Movie night decision
 When planning a movie night with friends, you can use the OR operator to decide on a movie genre. You'll choose a movie if at least one person is interested.
 
 The OR operator checks if at least one condition is true. It's like choosing between different movies to watch.
 
-friend1_likes_comedy = True
-friend2_likes_action = False
-friend3_likes_drama = False
-if friend1_likes_comedy or friend2_likes_action or friend3_likes_drama:
-    choose a movie()
+          friend1_likes_comedy = True
+          friend2_likes_action = False
+          friend3_likes_drama = False
+          if friend1_likes_comedy or friend2_likes_action or friend3_likes_drama:
+              choose a movie()
     
 Summary
 In this reading, you delved into the most frequently used operator and the concept of conditional branching, which encompasses the utilization of if statements and if-else statements.
