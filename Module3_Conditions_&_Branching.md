@@ -1,18 +1,17 @@
-##Conditions and Branching
+## Conditions and Branching
 
-Comparison operators
-Branching
-Logical operators
+1.Comparison operators
+2.Branching
+3.Logical operators
 
 1. Comparison operations
 Comparison operations are essential in programming. They help compare values and make decisions based on the results.
-
-Equality operator
+- Equality operator
 The equality operator == checks if two values are equal. For example, in Python:
 
-age = 25
-if age == 25:
-    print("You are 25 years old.")
+          age = 25
+          if age == 25:
+          print("You are 25 years old.")
     
 Here, the code checks if the variable age is equal to 25 and prints a message accordingly.
 
