@@ -76,14 +76,11 @@ Python's built-in functions offer a wide array of functionalities, from basic op
 Defining your functions
 Defining a function is like creating your mini-program:
 
-Use def followed by the function name and parentheses
+Use ## def ##  followed by the function name and parentheses
 Here is the syntax to define a function:
 
-1
-2
 def function_name():
     pass
-Copied!
 A "pass" statement in a programming function is a placeholder or a no-op (no operation) statement. Use it when you want to define a function or a code block syntactically but do not want to specify any functionality or implementation at that moment.
 
 Placeholder: "pass" acts as a temporary placeholder for future code that you intend to write within a function or a code block.
