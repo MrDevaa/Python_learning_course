@@ -73,100 +73,85 @@ min(): Returns the minimum value in an iterable
 
 Python's built-in functions offer a wide array of functionalities, from basic operations like len() and sum() to more specialized tasks.
 
-Defining your functions
+- Defining your functions
 Defining a function is like creating your mini-program:
 
-Use ## def ##  followed by the function name and parentheses
+1.Use def followed by the function name and parentheses
 Here is the syntax to define a function:
 
-def function_name():
-    pass
+        def function_name():
+            pass
+    
 A "pass" statement in a programming function is a placeholder or a no-op (no operation) statement. Use it when you want to define a function or a code block syntactically but do not want to specify any functionality or implementation at that moment.
 
-Placeholder: "pass" acts as a temporary placeholder for future code that you intend to write within a function or a code block.
+- Placeholder: "pass" acts as a temporary placeholder for future code that you intend to write within a function or a code block.
 
-Syntax Requirement: In many programming languages like Python, using "pass" is necessary when you define a function or a conditional block. It ensures that the code remains syntactically correct, even if it doesn't do anything yet.
+- Syntax Requirement: In many programming languages like Python, using "pass" is necessary when you define a function or a conditional block. It ensures that the code remains syntactically correct, even if it doesn't do anything yet.
 
-No Operation: "pass" itself doesn't perform any meaningful action. When the interpreter encounters “pass”, it simply moves on to the next statement without executing any code.
+- No Operation: "pass" itself doesn't perform any meaningful action. When the interpreter encounters “pass”, it simply moves on to the next statement without executing any code.
 
-Function Parameters:
+- Function Parameters:
 Parameters are like inputs for functions
 They go inside parentheses when defining the function
 Functions can have multiple parameters
+
 Example:
 
-1
-2
-3
-4
-5
-def greet(name):
-    print("Hello, " + name)
-result = greet("Alice")
-print(result)  # Output: Hello, Alice
-Copied!
-Docstrings (Documentation Strings)
+        def greet(name):
+            print("Hello, " + name)
+        result = greet("Alice")
+        print(result)  # Output: Hello, Alice
+
+- Docstrings (Documentation Strings)
 Docstrings explain what a function does
 Placed inside triple quotes under the function definition
 Helps other developers understand your function
+
 Example:
 
-1
-2
-3
-4
-5
-6
-7
-8
-def multiply(a, b):
-    """
-    This function multiplies two numbers.
-    Input: a (number), b (number)
-    Output: Product of a and b
-    """
-    print(a * b)
-multiply(2,6)
-Copied!
-Return statement
+        def multiply(a, b):
+            """
+            This function multiplies two numbers.
+            Input: a (number), b (number)
+            Output: Product of a and b
+            """
+            print(a * b)
+        multiply(2,6)
+
+- Return statement
 Return gives back a value from a function
 Ends the function's execution and sends the result
 A function can return various types of data
+
 Example:
 
-1
-2
-3
-4
-def add(a, b):
-    return a + b
-sum_result = add(3, 5)  # sum_result gets the value 8
-Copied!
-Understanding scopes and variables
+    def add(a, b):
+        return a + b
+    sum_result = add(3, 5)  # sum_result gets the value 8
+
+- Understanding scopes and variables
 Scope is where a variable can be seen and used:
 
-Global Scope: Variables defined outside functions; accessible everywhere
-Local Scope: Variables inside functions; only usable within that function
+- Global Scope: Variables defined outside functions; accessible everywhere
+- Local Scope: Variables inside functions; only usable within that function
+- 
 Example:
 
 Part 1: Global variable declaration
-1
-global_variable = "I'm global"
-Copied!
+
+        global_variable = "I'm global"
+
 This line initializes a global variable called global_variable and assigns it the value "I'm global".
 
 Global variables are accessible throughout the entire program, both inside and outside functions.
 
 Part 2: Function definition
-1
-2
-3
-4
-def example_function():
-    local_variable = "I'm local"
-    print(global_variable)  # Accessing global variable
-    print(local_variable)   # Accessing local variable
-Copied!
+
+    def example_function():
+        local_variable = "I'm local"
+        print(global_variable)  # Accessing global variable
+        print(local_variable)   # Accessing local variable
+
 Here, you define a function called example_function().
 
 Within this function:
@@ -176,80 +161,70 @@ A local variable named local_variable is declared and initialized with the strin
 The function then prints the values of both the global variable (global_variable) and the local variable (local_variable). It demonstrates that you can access global and local variables within a function.
 
 Part 3: Function call
-1
-example_function()
-Copied!
+
+    example_function()
+
 In this part, you call the example_function() by invoking it. This results in the function's code being executed.
 As a result of this function call, it will print the values of the global and local variables within the function.
 
 Part 4: Accessing global variable outside the function
-1
-print(global_variable)  # Accessible outside the function
-Copied!
+
+    print(global_variable)  # Accessible outside the function
+
 After calling the function, you print the value of the global variable global_variable outside the function. This demonstrates that global variables are accessible inside and outside of functions.
 
 Part 5: Attempting to access local variable outside the function
-1
-# print(local_variable)  # Error, local variable not visible here
-Copied!
+
+    # print(local_variable)  # Error, local variable not visible here
+
 In this part, you are attempting to print the value of the local variable local_variable outside of the function. However, this line would result in an error.
 
 Local variables are only visible and accessible within the scope of the function where they are defined.
 
 Attempting to access them outside of that scope would raise a "NameError".
 
-Using functions with loops
-Functions and loops together
+- Using functions with loops
+- Functions and loops together 
 Functions can contain code with loops
 This makes complex tasks more organized
 The loop code becomes a repeatable function
+
 Example:
 
-1
-2
-3
-4
-5
-def print_numbers(limit):
-    for i in range(1, limit+1):
-        print(i)
-print_numbers(5)  # Output: 1 2 3 4 5
-Copied!
-Enhancing code organization and reusability
+    def print_numbers(limit):
+        for i in range(1, limit+1):
+            print(i)
+    print_numbers(5)  # Output: 1 2 3 4 5
+
+- Enhancing code organization and reusability
 Functions group similar actions for easy understanding
 Looping within functions keeps code clean
 You can reuse a function to repeat actions
 Example
 
-1
-2
-3
-4
-5
-def greet(name):
-    return "Hello, " + name
-for _ in range(3):
-    print(greet("Alice"))
-Copied!
+        def greet(name):
+            return "Hello, " + name
+        for _ in range(3):
+            print(greet("Alice"))
+
 Modifying data structure using functions
+
 You'll use Python and a list as the data structure for this illustration. In this example, you will create functions to add and remove elements from a list.
 
 Part 1: Initialize an empty list
-1
-2
-# Define an empty list as the initial data structure
-my_list = []
-Copied!
+
+        # Define an empty list as the initial data structure
+        my_list = []
+
 In this part, you start by creating an empty list named my_list. This empty list serves as the data structure that you will modify throughout the code.
 
 Part 2: Define a function to add elements
-1
-2
-3
+
 # Function to add an element to the list
-def add_element(data_structure, element):
-    data_structure.append(element)
-Copied!
+
+        def add_element(data_structure, element):
+            data_structure.append(element)
+
 Here, you define a function called add_element. This function takes two parameters:
 
 data_structure: This parameter represents the list to which you want to add an element
@@ -257,19 +232,15 @@ element: This parameter represents the element you want to add to the list
 Inside the function, you use the append method to add the provided element to the data_structure, which is assumed to be a list.
 
 Part 3: Define a function to remove elements
-1
-2
-3
-4
-5
-6
-# Function to remove an element from the list
-def remove_element(data_structure, element):
-    if element in data_structure:
-        data_structure.remove(element)
-    else:
-        print(f"{element} not found in the list.")
-Copied!
+
+        # Function to remove an element from the list
+        def remove_element(data_structure, element):
+            if element in data_structure:
+                data_structure.remove(element)
+            else:
+                print(f"{element} not found in the list.")
+
+
 In this part, you define another function called remove_element. It also takes two parameters:
 
 data_structure: The list from which we want to remove an element
@@ -277,43 +248,37 @@ element: The element we want to remove from the list
 Inside the function, you use conditional statements to check if the element is present in the data_structure. If it is, you use the remove method to remove the first occurrence of the element. If it's not found, you print a message indicating that the element was not found in the list.
 
 Part 4: Add elements to the list
-1
-2
-3
-4
-# Add elements to the list using the add_element function
-add_element(my_list, 42)
-add_element(my_list, 17)
-add_element(my_list, 99)
-Copied!
+
+        # Add elements to the list using the add_element function
+        add_element(my_list, 42)
+        add_element(my_list, 17)
+        add_element(my_list, 99)
+
 Here, you use the add_element function to add three elements (42, 17, and 99) to the my_list. These are added one at a time using function calls.
 
 Part 5: Print the current list
-1
-2
-# Print the current list
-print("Current list:", my_list)
-Copied!
+
+    # Print the current list
+    print("Current list:", my_list)
+
 This part simply prints the current state of the my_list to the console, allowing us to see the elements that have been added so far.
 
 Part 6: Remove elements from the list
-1
-2
-3
-# Remove an element from the list using the remove_element function
-remove_element(my_list, 17)
-remove_element(my_list, 55)  # This will print a message since 55 is not in the list
-Copied!
+
+    # Remove an element from the list using the remove_element function
+    remove_element(my_list, 17)
+    remove_element(my_list, 55)  # This will print a message since 55 is not in the list
+
+
 In this part, you use the remove_element function to remove elements from the my_list. First, you attempt to remove 17 (which is in the list), and then you try to remove 55 (which is not in the list). The second call to remove_element will print a message indicating that 55 was not found.
 
 Part 7: Print the updated list
-1
-2
-# Print the updated list
-print("Updated list:", my_list)
-Copied!
+
+    # Print the updated list
+    print("Updated list:", my_list)
+
 Finally, you print the updated my_list to the console. This allows us to observe the modifications made to the list by adding and removing elements using the defined functions.
 
-Conclusion
+- Conclusion
 Congratulations! You've completed the Reading Instruction Lab on Python functions. You've gained a solid understanding of functions, their significance, and how to create and use them effectively. These skills will empower you to write more organized, modular, and powerful code in your Python projects.
 
