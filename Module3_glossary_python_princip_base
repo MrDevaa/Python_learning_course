@@ -28,7 +28,3 @@ Welcome! This alphabetized glossary contains many of the terms you'll find withi
 | **Sequences**           | Sequences in Python are ordered collections of items that can include data types like strings, lists, and tuples, allowing for indexing and iteration.               |
 | **Syntax**              | In Python, "syntax" refers to the set of rules that defines the structure of statements and expressions in the language.                                             |
 | **While loops**         | While loops in Python are used to repeatedly execute a block of code as long as a specified condition is true.                                                      |
-
----
-
-This glossary should help you better understand the terminology and concepts you'll encounter while learning Python.
