@@ -28,10 +28,6 @@ Pandas peut être utilisé pour charger des données à partir de diverses sourc
 La fonction read_csv est utilisée pour charger des données à partir d’un fichier CSV dans un DataFrame Pandas.
 Pour lire un fichier CSV (Comma-Separated Values) en Python en utilisant la bibliothèque Pandas, vous pouvez utiliser la fonction pd.read_csv(). Voici la syntaxe pour lire un fichier CSV :
 
-1
-2
-3
-4
 import pandas as pd
 # Read the CSV file into a DataFrame
 df = pd.read_csv('your_file.csv')
