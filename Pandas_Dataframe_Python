@@ -89,3 +89,55 @@ data = {'Name': ['Alice', 'Bob', 'Charlie', 'David'],
         'City': ['New York', 'San Francisco', 'Los Angeles', 'Chicago']}
 df = pd.DataFrame(data)
 print(df)
+
+Sélection de colonnes :
+Vous pouvez sélectionner une seule colonne d’un DataFrame en spécifiant le nom de la colonne entre double crochets.
+Plusieurs colonnes peuvent être sélectionnées de manière similaire, créant un nouveau DataFrame.
+
+
+print(df['Name'])  # Access the 'Name' column
+
+Accéder aux lignes :
+Vous pouvez accéder aux lignes par leur index en utilisant .iloc[] ou par étiquette en utilisant .loc[].
+
+
+print(df.iloc[2])   # Access the third row by position
+print(df.loc[1])    # Access the second row by label
+
+Découpage :
+Vous pouvez découper les DataFrames pour sélectionner des lignes et des colonnes spécifiques.
+
+
+print(df[['Name', 'Age']])  # Select specific columns
+print(df[1:3])             # Select specific rows
+
+Trouver des éléments uniques :
+Utilisez la méthode unique pour déterminer les éléments uniques dans une colonne d’un DataFrame.
+
+
+unique_dates = df['Age'].unique()
+
+Filtrage conditionnel :
+Vous pouvez filtrer des données dans un DataFrame en fonction de conditions en utilisant des opérateurs d’inégalité. Par exemple, vous pouvez filtrer les albums sortis après une certaine année.
+
+
+high_above_102 = df[df['Age'] > 25]
+
+Sauvegarder des DataFrames :
+Pour sauvegarder un DataFrame dans un fichier CSV, utilisez la méthode to_csv et spécifiez le nom de fichier avec une extension “.csv”. Pandas propose d’autres fonctions pour sauvegarder des DataFrames dans différents formats.
+
+
+df.to_csv('trading_data.csv', index=False)
+
+##Attributs et Méthodes de DataFrame
+Les DataFrames offrent de nombreux attributs et méthodes pour la manipulation et l’analyse des données, y compris :
+
+shape : Renvoie les dimensions (nombre de lignes et de colonnes) du DataFrame.
+info() : Fournit un résumé du DataFrame, y compris les types de données et les comptes non nuls.
+describe() : Génère des statistiques sommaires pour les colonnes numériques.
+head(), tail() : Affiche les n premières ou dernières lignes du DataFrame.
+mean(), sum(), min(), max() : Calcule des statistiques sommaires pour les colonnes.
+sort_values() : Trie le DataFrame par une ou plusieurs colonnes.
+groupby() : Regroupe les données en fonction de colonnes spécifiques pour l’agrégation.
+fillna(), drop(), rename() : Gère les valeurs manquantes, supprime des colonnes ou renomme des colonnes.
+apply() : Applique une fonction à chaque élément, ligne ou colonne du DataFrame.
