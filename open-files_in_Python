@@ -1,0 +1,24 @@
+# Modes d'ouverture de fichier en Python
+
+Cette table présente une vue d'ensemble des différents modes d'ouverture de fichier, leur syntaxe et leurs cas d'utilisation. Comprendre ces modes est essentiel pour manipuler des fichiers en Python dans diverses tâches de gestion de données.
+
+| **Mode**  | **Syntaxe** | **Description**                                                                                                     |
+|-----------|-------------|---------------------------------------------------------------------------------------------------------------------|
+| **`r`**   | `'r'`       | Mode lecture. Ouvre un fichier existant pour la lecture. Lève une erreur si le fichier n'existe pas.               |
+| **`w`**   | `'w'`       | Mode écriture. Crée un nouveau fichier pour l'écriture. Écrase le fichier s'il existe déjà.                        |
+| **`a`**   | `'a'`       | Mode ajout. Ouvre un fichier pour y ajouter des données. Crée le fichier s'il n'existe pas.                       |
+| **`x`**   | `'x'`       | Mode création exclusive. Crée un nouveau fichier pour l'écriture, mais lève une erreur si le fichier existe déjà.  |
+| **`rb`**  | `'rb'`      | Mode lecture binaire. Ouvre un fichier binaire existant pour la lecture.                                           |
+| **`wb`**  | `'wb'`      | Mode écriture binaire. Crée un nouveau fichier binaire pour l'écriture.                                            |
+| **`ab`**  | `'ab'`      | Mode ajout binaire. Ouvre un fichier binaire pour y ajouter des données.                                           |
+| **`xb`**  | `'xb'`      | Mode création exclusive binaire. Crée un nouveau fichier binaire, mais lève une erreur si le fichier existe déjà.  |
+| **`rt`**  | `'rt'`      | Mode lecture texte. Ouvre un fichier texte existant pour la lecture. (Par défaut pour les fichiers texte)          |
+| **`wt`**  | `'wt'`      | Mode écriture texte. Crée un nouveau fichier texte pour l'écriture. (Par défaut pour les fichiers texte)           |
+| **`at`**  | `'at'`      | Mode ajout texte. Ouvre un fichier texte pour y ajouter des données. (Par défaut pour les fichiers texte)          |
+| **`xt`**  | `'xt'`      | Mode création exclusive texte. Crée un nouveau fichier texte, mais lève une erreur si le fichier existe déjà.      |
+| **`r+`**  | `'r+'`      | Mode lecture et écriture. Ouvre un fichier existant pour la lecture et l'écriture.                                 |
+| **`w+`**  | `'w+'`      | Mode écriture et lecture. Crée un nouveau fichier pour la lecture et l'écriture. Écrase le fichier s'il existe déjà. |
+| **`a+`**  | `'a+'`      | Mode ajout et lecture. Ouvre un fichier pour y ajouter des données et pour la lecture. Crée le fichier s'il n'existe pas. |
+| **`x+`**  | `'x+'`      | Mode création exclusive et lecture/écriture. Crée un nouveau fichier pour la lecture et l'écriture, mais lève une erreur si le fichier existe déjà. |
+
+---
