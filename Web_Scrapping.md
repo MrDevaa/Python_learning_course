@@ -57,6 +57,9 @@ Vous pouvez visualiser les documents HTML comme des arbres avec des balises comm
 ### Tables HTML
 Les tables HTML sont essentielles pour présenter des données structurées.
 
+![Table HTML](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%205/images/table.png)
+
+
 - Définissez une table HTML en utilisant la balise `<table>`.
 - Chaque ligne de table est définie avec une balise `<tr>`.
 - La première ligne utilise souvent la balise d’en-tête de table, généralement `<th>`.
