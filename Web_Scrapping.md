@@ -52,6 +52,8 @@ Vous pouvez visualiser les documents HTML comme des arbres avec des balises comm
 - Les balises au sein de la même balise parente sont considérées comme des sœurs.
 - Par exemple, la balise `<html>` contient à la fois les balises `<head>` et `<body>`, les rendant descendants de `<html>` mais enfants de `<html>`. `<head>` et `<body>` sont des sœurs.
 
+![Arbre de document HTML](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%205/images/DOM_structure.png)
+
 ### Tables HTML
 Les tables HTML sont essentielles pour présenter des données structurées.
 
