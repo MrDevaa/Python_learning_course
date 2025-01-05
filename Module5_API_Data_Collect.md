@@ -1,0 +1,44 @@
+# Résumé du Module 5 : API et collecte de données
+
+- Les API simples en Python sont des interfaces de programmation d'applications qui fournissent des méthodes directes et faciles à utiliser pour interagir avec des services, des bibliothèques ou des données, souvent avec une configuration ou une complexité minimale.
+- Une API permet à deux logiciels de communiquer entre eux.
+- L'utilisation d'une bibliothèque API en Python implique l'importation de la bibliothèque, l'appel de ses fonctions ou méthodes pour effectuer des requêtes HTTP, et l'analyse des réponses pour accéder aux données ou aux services fournis par l'API.
+- L'API Pandas traite les données en communiquant avec les autres composants logiciels.
+- Une Instance se forme lorsque vous créez un dictionnaire et que vous utilisez ensuite le constructeur DataFrames pour créer un objet Pandas.
+- La méthode `head()` affiche le nombre de lignes mentionné en haut (5 par défaut) des DataFrames, tandis que la méthode `mean()` calcule la moyenne et renvoie les valeurs.
+- Les API repos vous permettent de communiquer via l'internet, en tirant parti de ressources telles que le stockage, l'accès à davantage de données, les algorithmes IA, etc.
+- Les méthodes HTTP transmettent des données par l'intermédiaire d'internet.
+- Un message HTTP comprend généralement un fichier JSON contenant des instructions pour les opérations.
+- Les messages HTTP contenant des fichiers JSON sont renvoyés au client en tant que réponse des services web.
+- Pour traiter des données de séries chronologiques, il faut utiliser la fonction Pandas time series.
+- Vous pouvez obtenir des données pour des chandeliers quotidiens et tracer le graphique à l'aide de Plotly avec le tracé des chandeliers.
+- Le protocole HTTP (HyperText Transfer Protocol) permet de transférer des données, y compris des pages web et des ressources, entre un client (un navigateur web) et un serveur sur le World Wide Web.
+- Le protocole HTTP est couramment utilisé pour la mise en œuvre de divers types d'API REST.
+- Une réponse HTTP comprend des informations telles que le type de ressource, la longueur de la ressource, etc.
+- Uniform Resource Locator (URL) est le moyen le plus populaire de trouver des ressources sur le web.
+- L'URL se divise en trois parties : le schéma, l'adresse internet ou URL de base, et la route.
+- La méthode GET est l'une des méthodes les plus courantes pour demander des informations. D'autres méthodes peuvent également inclure le corps.
+- La méthode `Response` contient la version et le corps de la réponse.
+- `POST` soumet des données au serveur, `PUT` met à jour des données déjà présentes sur le serveur, `DELETE` supprime des données du serveur.
+- Requests est une bibliothèque Python qui vous permet d'envoyer facilement des requêtes HTTP/1.1.
+- Vous pouvez modifier les résultats de votre Requête avec la méthode GET.
+- Vous pouvez obtenir plusieurs intrusions à partir d'une URL comme le nom, l'IDS, etc. avec une chaîne de Requête.
+- Le web scraping en Python consiste à extraire et à analyser des données à partir de sites web afin de recueillir des informations pour diverses applications, à l'aide de bibliothèques telles que Beautiful Soup et requests.
+- L'élément HTML comprend du texte entouré d'éléments de texte bleus enfermés dans des crochets angulaires appelés balises.
+- Vous pouvez sélectionner un élément HTML sur une page web pour inspecter la page web.
+- Les pages web peuvent également contenir des éléments CSS et JavaScript en plus des éléments HTML.
+- Chaque document HTML est comme un arbre HTML, qui peut contenir des chaînes et d'autres balises.
+- Chaque tableau HTML est composé de balises de tableau et est structuré avec des éléments tels que des lignes, des en-têtes, un corps, etc.
+- Les données tabulaires peuvent également être extraites des pages web en utilisant la méthode `read_html` dans Pandas.
+- Beautiful Soup en Python est une bibliothèque pour l'analyse et la navigation dans les documents HTML et XML, rendant l'extraction et la manipulation de données à partir de pages web plus accessibles.
+- Pour analyser un document, passez-le par le constructeur Beautiful Soup pour obtenir un objet Beautiful Soup représentant le document comme une structure de données imbriquée.
+- Beautiful Soup représente le HTML comme un ensemble d'objets en forme d'arbre avec des méthodes pour analyser le HTML.
+- La chaîne navigable est comme une chaîne Python qui prend en charge les fonctionnalités de Beautiful Soup.
+- `find_all` est une méthode utilisée pour extraire du contenu sur la base du nom de la balise, de ses attributs, du texte d'une chaîne ou d'une combinaison de ces éléments.
+- La méthode `find_all` examine les descendants d'une balise et récupère tous les descendants qui correspondent à vos filtres.
+- Le résultat est un itérable Python, comme une liste.
+- Les formats de fichiers font référence à la structure spécifique et aux règles d'encodage utilisées pour stocker et représenter des données dans des fichiers, tels que .txt pour du texte brut ou .csv pour des valeurs séparées par des virgules.
+- Python fonctionne avec différents formats de fichiers tels que CSV, XML, JSON, xlsx, etc.
+- L'extension d'un nom de fichier vous permet de savoir de quel type de fichier il s'agit et avec quoi il doit s'ouvrir.
+- Pour accéder aux données des fichiers CSV, nous pouvons utiliser des bibliothèques Python telles que Pandas.
+- De même, différentes méthodes permettent d'analyser les fichiers JSON, XML et autres.
